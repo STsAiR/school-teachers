@@ -21,6 +21,9 @@ jobs:
 
       - name: Build production site
         run: pnpm run build
+        env:
+          # For GitHub repo pages (https://<user>.github.io/<repo>/)
+          VITE_BASE: "/${{ github.event.repository.name }}/"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
