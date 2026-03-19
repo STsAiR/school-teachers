@@ -3,13 +3,16 @@
 This project is a Vite + React app with a bundled server component.
 
 ## ✅ Goal
+
 Deploy the **frontend** to **GitHub Pages** using **GitHub Actions**.
 
 ## 🔧 What was added
+
 - ✅ A GitHub Actions workflow: `.github/workflows/deploy-pages.yml`
 - ✅ Vite base URL configuration via `VITE_BASE` (for repo pages)
 
 ## 🚀 Quick setup (create GitHub repo + push)
+
 1. Create a new repository on GitHub (e.g., `ssc-kla-directory`).
 2. Add the GitHub remote and push:
 
@@ -21,8 +24,11 @@ git push -u origin main
 ```
 
 > Tip: If you use GitHub CLI, you can run:
+>
 > ```sh
-gh repo create <ORG_OR_USER>/<REPO> --public --source=. --remote=origin --push
+> gh repo create <ORG_OR_USER>/<REPO> --public --source=. --remote=origin --push
+> ```
+
 ```
 
 ## 🛠️ Deploying to GitHub Pages
@@ -49,3 +55,4 @@ Then every push to `main` will trigger a build and deploy to GitHub Pages.
 ---
 
 If you want the **server** piece deployed (Node backend), you'll need a platform that supports Node (e.g., Vercel, Fly, Render, etc.). GitHub Pages only hosts static assets.
+```
