@@ -1,6 +1,6 @@
 # ssc-kla-directory
 
-This project is a Vite + React app with a bundled server component.
+This project is a Vite + React app with a bundled server component about school teacher.
 
 ## ✅ Goal
 
